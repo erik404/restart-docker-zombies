@@ -13,6 +13,7 @@ export LIMIT
 restart_container() {
   CONTAINER_ID="$1"
   CMD=$(sudo docker restart "$CONTAINER_ID")
+  echo "$CMD"
 }
 
 # arg1=container_id, arg2=metric
